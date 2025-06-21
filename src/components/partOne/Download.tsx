@@ -1,12 +1,16 @@
 import Img from "../../assets/image/downloadimg.png";
 import ImgMobile from "../../assets/image/phone.png";
+import { useTranslation, Trans } from "react-i18next";
+
 const Download = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <section className="download">
         <div className="content">
           <h2>
-            Ilovani yuklab oling va <br /> tanovvulni boshlang{" "}
+            <Trans i18nKey="download.title" components={{ br: <br /> }} />{" "}
             <svg
               width="30"
               height="30"
@@ -82,12 +86,7 @@ const Download = () => {
               </defs>
             </svg>
           </h2>
-          <p>
-            Fasgo – bu tez, ishonchli va qulay ovqat yetkazib berish xizmati.
-            Sevimli taomlaringizni mobil ilova orqali osongina buyurtma qiling,
-            biz esa ularni tezda eshigingizgacha yetkazamiz. Yaxshi ta’m –
-            birgina bosishda!
-          </p>
+          <p>{t("download.text")}</p>
           <div className="actions">
             <button className="downApp">
                 <svg
@@ -103,7 +102,7 @@ const Download = () => {
                   />
                 </svg>
               <div>
-                <small>Ilovani yuklab olish</small>
+                <small>{t("download.button_text")}</small>
                 <svg
                   width="85"
                   height="18"
@@ -136,7 +135,7 @@ const Download = () => {
                 />
               </svg>
               <div>
-                <small>Ilovani yuklab olish</small>
+                <small>{t("download.button_text")}</small>
                 <svg
                   width="76"
                   height="16"
