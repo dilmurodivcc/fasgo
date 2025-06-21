@@ -1,4 +1,5 @@
 import Brands from "./Brands";
+import Download from "./Download";
 import Hero from "./Hero";
 import WideChoice from "./WideChoice";
 
@@ -9,6 +10,7 @@ const page = () => {
         <Hero />
         <Brands/>
         <WideChoice/>
+        <Download/>
       </div>
     </>
   );

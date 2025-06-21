@@ -1,0 +1,62 @@
+.download {
+  border-radius: 80px 40px;
+  background-color: #fff;
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  .content {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-left: 72px;
+  }
+  h2 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 132%;
+    background: linear-gradient(316deg, #d0fc78 0%, #0cc0df 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  p {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 145%;
+    letter-spacing: -0.01em;
+    color: #a471d8;
+    font-family: var(--font-family);
+    width: 692px;
+  }
+  .actions{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  .downApp {
+    border-radius: 32px 16px;
+    padding: 20px;
+    background: linear-gradient(white, white) padding-box,
+      linear-gradient(90deg, #00f97d, #00acca) border-box;
+    border: 2px solid transparent;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    small {
+      font-family: var(--font-family);
+      font-weight: 500;
+      font-size: 14px;
+      letter-spacing: -0.02em;
+      color: #0cc0df;
+    }
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+  }
+}
