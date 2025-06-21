@@ -1,21 +1,16 @@
 .QuestionsSec {
   width: 1000px;
+ 
   @media (max-width:1050px) {
     width: 800px;
   }
   @media (max-width:850px) {
     width: 100%;
     padding: 10px;
+
   }
   .QuestionsSec__title {
-    font-style: italic;
-    font-weight: 700;
-    font-size: 40px;
-    text-align: center;
-    background: linear-gradient(341deg, #00acca 0%, #00f97d 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    
     margin-bottom: 70px;
     @media (max-width:650px) {
       font-size: 24px;
