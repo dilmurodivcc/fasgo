@@ -36,6 +36,19 @@
     "telegram": "Telegram",
     "instagram": "Instagram",
     "facebook": "Facebook"
+  },
+  "download": {
+    "title": "Ilovani yuklab oling va <br /> tanovvulni boshlang",
+    "text": "Fasgo – bu tez, ishonchli va qulay ovqat yetkazib berish xizmati. Sevimli taomlaringizni mobil ilova orqali osongina buyurtma qiling, biz esa ularni tezda eshigingizgacha yetkazamiz. Yaxshi ta'm – birgina bosishda!",
+    "button_text": "Ilovani yuklab olish"
+  },
+  "hero": {
+    "title": "Sevimli restoranlardan taomlarni <1>tez</1> yetkazib berish",
+    "subtitle": "Milliy taomlar, fast-food, desert va ichimliklar bir ilovada!"
+  },
+  "wide_choice": {
+    "title": "Keng tanlov imkoniyati",
+    "text": "<0>Fasgo</0>’da ta’bingizga mos ming xil taom bor! Milliy palovdan tortib, italyan pizzasi, yapon sushisi yoki amerika burgerigacha — hammasi <1>bir joyda</1>. Bugun lag'mon, ertaga sushi? Tanlov sizdan! Har kun yangi ta’m, har buyurtma – mazali sarguzasht!"
   }
 }
   
