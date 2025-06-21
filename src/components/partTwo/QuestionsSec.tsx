@@ -1,3 +1,9 @@
+import QuestionStar1 from "/public/icons/QuestionStar1.svg";
+import QuestionStar2 from "/public/icons/QuestionStar2.svg";
+import QuestionStar3 from "/public/icons/QuestionStar3.svg";
+import QuestionStar4 from "/public/icons/QuestionStar4.svg";
+import QuestionStar5 from "/public/icons/QuestionStar5.svg";
+
 const QuestionsSec = () => {
   return (
     <section className="QuestionsSec container">
@@ -5,7 +11,7 @@ const QuestionsSec = () => {
       <div className="QuestionsBox">
         <div className="QuestionsBox_question">
           <div className="QuestionsBox_question_imgBox">
-            <img src="/public/icons/QuestionStar1.svg" alt="" />
+            <img src={QuestionStar1} alt="" />
           </div>
 
           <div className="QuestionsBox_questions_text">
@@ -18,7 +24,7 @@ const QuestionsSec = () => {
         </div>
         <div className="QuestionsBox_question">
           <div className="QuestionsBox_question_imgBox">
-            <img src="/public/icons/QuestionStar2.svg" alt="" />
+            <img src={QuestionStar2} alt="" />
           </div>
 
           <div className="QuestionsBox_questions_text">
@@ -31,7 +37,7 @@ const QuestionsSec = () => {
         </div>
         <div className="QuestionsBox_question">
           <div className="QuestionsBox_question_imgBox">
-            <img src="/public/icons/QuestionStar3.svg" alt="" />
+            <img src={QuestionStar3} alt="" />
           </div>
 
           <div className="QuestionsBox_questions_text">
@@ -44,7 +50,7 @@ const QuestionsSec = () => {
         </div>
         <div className="QuestionsBox_question">
           <div className="QuestionsBox_question_imgBox">
-            <img src="/public/icons/QuestionStar4.svg" alt="" />
+            <img src={QuestionStar4} alt="" />
           </div>
 
           <div className="QuestionsBox_questions_text">
@@ -57,7 +63,7 @@ const QuestionsSec = () => {
         </div>
         <div className="QuestionsBox_question">
           <div className="QuestionsBox_question_imgBox">
-            <img src="/public/icons/QuestionStar5.svg" alt="" />
+            <img src={QuestionStar5} alt="" />
           </div>
 
           <div className="QuestionsBox_questions_text">
