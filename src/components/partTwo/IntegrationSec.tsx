@@ -1,3 +1,7 @@
+import home from "/public/icons/home.svg";
+import banerBg from "/public/icons/banerBg.svg";
+import delevery from "/public/icons/delevery.svg";
+
 const IntegrationSec = () => {
   return (
     <section className="IntegratSec container">
@@ -11,8 +15,8 @@ const IntegrationSec = () => {
               <span>Hamkor bo’lish</span>
             </button>
           </div>
-          <img className="BannerImg" src="/public/icons/home.svg" alt="" />
-          <img className="bannerBgimg" src="/public/icons/banerBg.svg" alt="" />
+          <img className="BannerImg" src={home} alt="" />
+          <img className="bannerBgimg" src={banerBg} alt="" />
         </div>
         <div className="IntegratBannersSec_banner interagB">
           <div className="interbanner_text">
@@ -22,8 +26,8 @@ const IntegrationSec = () => {
               <span>Hamkor bo’lish</span>
             </button>
           </div>
-          <img className="BannerImg" src="/public/icons/delevery.svg" alt="" />
-          <img className="bannerBgimg" src="/public/icons/banerBg.svg" alt="" />
+          <img className="BannerImg" src={delevery} alt="" />
+          <img className="bannerBgimg" src={banerBg} alt="" />
         </div>
       </div>
     </section>
