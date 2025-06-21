@@ -1,0 +1,78 @@
+@media (max-width: 1000px) {
+  .container {
+    max-width: 94vw !important;
+  }
+  nav {
+    gap: 15px !important;
+  }
+  a {
+    font-size: 14px !important;
+  }
+
+  .hero {
+    flex-direction: column;
+    height: auto !important;
+    justify-content: center !important;
+    align-items: center;
+    padding-top: 40px;
+    .content {
+      width: 80% !important;
+      margin: 0 !important;
+    }
+    img {
+      width: 70%;
+      height: auto !important;
+    }
+  }
+  .brands {
+    .brandImg:nth-child(1) {
+      display: none !important;
+    }
+    flex-wrap: wrap;
+  }
+  .download {
+    flex-direction: column !important;
+    height: auto !important;
+    padding: 35px;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    .mob {
+      display: block;
+      width: 80%;
+    }
+    .des {
+      display: none;
+    }
+    .actions {
+      flex-direction: column;
+      button {
+        width: 100% !important;
+      }
+    }
+    .content {
+      margin: 0 !important;
+      width: 100%;
+      gap: 30px;
+    }
+  }
+  .choices {
+    flex-wrap: wrap !important;
+    justify-content: center;
+  }
+}
+
+
+@media (max-width: 900px){
+    .header{
+        nav{
+            display: none !important;
+        }
+        .menu{
+            display: block;
+        }
+        .pm-button{
+            display: none;
+        }
+    }
+}

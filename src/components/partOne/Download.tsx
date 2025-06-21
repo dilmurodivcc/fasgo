@@ -1,4 +1,5 @@
 import Img from "../../assets/image/downloadimg.png";
+import ImgMobile from "../../assets/image/phone.png";
 const Download = () => {
   return (
     <>
@@ -180,7 +181,8 @@ const Download = () => {
             </button>
           </div>
         </div>
-        <img src={Img} alt="" />
+        <img src={Img} className="des" alt="" />
+        <img src={ImgMobile} className="mob" alt="" />
       </section>
     </>
   );
