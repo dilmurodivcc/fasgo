@@ -23,6 +23,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  // align-self: self-start;
   .QuestionsBox_question:nth-of-type(2) .QuestionsBox_question_imgBox {
     margin-left: -8px;
     @media (max-width:1050px) {
