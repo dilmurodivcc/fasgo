@@ -1,4 +1,41 @@
 {
+  "home": {
     "welcome": "Fasgo xush kelibsiz"
+  },
+  "footer": {
+    "tel": "Tel",
+    "email": "Email",
+    "address": "Manzil: O'zbekiston, Toshkent shahar, Chilonzor tumani Obod mavzesi, Istiqlol ko'chasi, 23A uy.",
+    "offer": "Ommaviy oferta",
+    "privacy": "Maxfiylik siyosati"
+  },
+  "integration": {
+    "title": "Biz bilan ishlash",
+    "partner_title": "Fasgo hamkori bo'lish",
+    "partner_text": "Platformamizga qo'shilib, minglab mijozlarga yetib boring.",
+    "partner_button": "Hamkor bo'lish",
+    "courier_title": "Fasgo kuryeri bo'lish",
+    "courier_text": "Buyurtmalarni yetkazib berib, daromad oling.",
+    "courier_button": "Kuryer bo'lish"
+  },
+  "questions": {
+    "title": "Ko'p so'raladigan savollar",
+    "q1_title": "Fasgo ilovasi orqali qanday buyurtma beraman?",
+    "q1_text": "Ilovani yuklab olib, ro'yxatdan o'tasiz, menyudan taom tanlaysiz va \"Buyurtma berish\" tugmasini bosasiz. Qolganini biz hal qilamiz!",
+    "q2_title": "Yetkazib berish qancha vaqt oladi?",
+    "q2_text": "Buyurtma joylashgan joyga va restoran bandligiga qarab, o'rtacha 30-45 daqiqa ichida yetkaziladi.",
+    "q3_title": "To'lovni qanday amalga oshiraman?",
+    "q3_text": "Siz to'lovni istalgan bank karta bilan yoki naqd pulda, yetkazib beruvchi orqali amalga oshirishingiz mumkin.",
+    "q4_title": "Taom yetib kelmasa yoki muammo bo'lsa nima qilaman?",
+    "q4_text": "Mijozlar xizmatiga murojaat qiling – biz muammoni tezda hal qilamiz yoki pulingizni qaytaramiz.",
+    "q5_title": "Qanday taomlar mavjud?",
+    "q5_text": "Fasgo'da milliy, fastfud, vegetarian, osiyo, yevropa oshxonalaridan minglab taomlar bor – har kun yangi tanlov!"
+  },
+  "social_media": {
+    "title": "Fasgo ijtimoiy tarmoqlarda",
+    "telegram": "Telegram",
+    "instagram": "Instagram",
+    "facebook": "Facebook"
   }
+}
   
