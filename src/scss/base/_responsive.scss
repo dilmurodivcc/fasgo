@@ -95,4 +95,37 @@
       width: auto !important;
     }
   }
+    .brands {
+    .brandImg:nth-child(1) {
+      display: none !important;
+    }
+    .brandImg:nth-child(5) {
+      display: none !important;
+    }
+    .brandImg:nth-child(7) {
+      display: none !important;
+    }
+    img{
+      height:40px;
+    }
+    flex-wrap: wrap;
+  }
+  h2{
+  font-size: 22px !important;
+
+  }
+  p{
+    font-size: 16px !important;
+  }
+  .choices{
+    img{
+      width: 100px !important;
+    }
+  }
+  .download{
+    padding: 30px 20px;
+    border-radius: 30px 15px;
+
+  }
 }
+
