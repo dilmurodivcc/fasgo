@@ -62,17 +62,37 @@
   }
 }
 
-
-@media (max-width: 900px){
-    .header{
-        nav{
-            display: none !important;
-        }
-        .menu{
-            display: block;
-        }
-        .pm-button{
-            display: none;
-        }
+@media (max-width: 900px) {
+  .header {
+    nav {
+      display: none !important;
     }
+    .menu {
+      display: block;
+    }
+    .pm-button {
+      display: none;
+    }
+  }
+}
+@media (max-width: 650px) {
+  .hero {
+    padding: 30px 15px;
+    h1 {
+      font-size: 24px !important;
+    }
+    img{
+      display: none;
+    }
+    .imgMob{
+      display: block !important;
+      width: 95% !important;
+    }
+    .content {
+      justify-content: center !important;
+      align-items: center !important;
+      text-align: center;
+      width: auto !important;
+    }
+  }
 }
