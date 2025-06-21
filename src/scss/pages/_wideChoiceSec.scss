@@ -1,0 +1,24 @@
+.wideChoice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 120px;
+  p {
+    font-family: var(--font-family);
+    font-style: italic;
+    font-weight: 400;
+    max-width: 1000px;
+    font-size: 20px;
+    text-align: center;
+    color: #a471d8;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  .choices{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+}
