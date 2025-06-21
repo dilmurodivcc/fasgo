@@ -31,6 +31,7 @@
       display: flex;
       align-items: center;
       gap: 8px;
+      cursor: pointer;
     }
     .download {
       border-radius: 40px 20px;
@@ -62,6 +63,7 @@
   align-items: center;
   z-index: 20;
   background: transparent;
+
 }
 .lang {
   border-radius: 36px 36px 0 0;
@@ -76,23 +78,19 @@
   transition: border-radius 0.2s;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 }
-.lang-dropdown-wrapper.open .lang {
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-}
+
 .lang-dropdown {
   position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
+  top: 110%;
+  left: -35px;
+  width: 140px;
   background: #fff;
-  border-radius: 0 0 36px 36px;
+  border-radius: 30px 15px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   z-index: 20;
-  padding: 16px 0 16px 0;
   border-top: none;
   transition: border-radius 0.2s;
 }
@@ -100,8 +98,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  padding: 12px 0 0 0;
+  gap: 3px;
   background: none;
   border: none;
   font-family: var(--font-family);
@@ -109,13 +106,11 @@
   color: #222;
   cursor: pointer;
   transition: background 0.15s;
-  width: 56px;
-  height: 56px;
+  width: 50px;
+  height: 46px;
   border-radius: 50%;
 }
-.lang-option:hover {
-  background: #f3fafd;
-}
+    
 .arrow {
   transition: transform 0.2s;
 }
