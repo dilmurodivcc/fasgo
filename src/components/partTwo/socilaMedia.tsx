@@ -1,39 +1,49 @@
 import tg from "/public/icons/tg.svg";
 import insta from "/public/icons/insta.svg";
 import facebooks from "/public/icons/facebooks.svg";
+import { motion, easeOut } from "framer-motion";
+
+const socials = [
+  {
+    icon: tg,
+    title: "Telegram",
+    desc: "fasgo.app",
+  },
+  {
+    icon: insta,
+    title: "Instagram",
+    desc: "fasgo_official",
+  },
+  {
+    icon: facebooks,
+    title: "Facebook",
+    desc: "fasgo.app",
+  },
+];
 
 const SocialMedia = () => {
   return (
     <section className="SocialMediaSec container">
       <h1 className="HeroTitle">Fasgo ijtimoiy tarmoqlarda</h1>
       <div className="SocialMediBox">
-        <div className="SocilmediaBox_socialMedia">
-          <a href="@fasgo.app">
-            <img src={tg} alt="" />
-            <div>
-              <h4>Telegram</h4>
-              <p>fasgo.app</p>
-            </div>
-          </a>
-        </div>
-        <div className="SocilmediaBox_socialMedia">
-          <a href="@fasgo.app">
-            <img src={insta} alt="" />
-            <div>
-              <h4>Instagram</h4>
-              <p>fasgo_official</p>
-            </div>
-          </a>
-        </div>
-        <div className="SocilmediaBox_socialMedia">
-          <a href="@fasgo.app">
-            <img src={facebooks} alt="" />
-            <div>
-              <h4>Facebook</h4>
-              <p>fasgo.app</p>
-            </div>
-          </a>
-        </div>
+        {socials.map((s, i) => (
+          <motion.div
+            className="SocilmediaBox_socialMedia"
+            key={i}
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.15 * i, ease: easeOut }}
+            viewport={{ once: true, amount: 0.3 }}
+          >
+            <a href="@fasgo.app">
+              <img src={s.icon} alt="" />
+              <div>
+                <h4>{s.title}</h4>
+                <p>{s.desc}</p>
+              </div>
+            </a>
+          </motion.div>
+        ))}
       </div>
     </section>
   );
