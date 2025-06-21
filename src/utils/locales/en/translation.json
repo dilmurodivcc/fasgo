@@ -1,0 +1,40 @@
+{
+  "home": {
+    "welcome": "Welcome to Fasgo"
+  },
+  "footer": {
+    "tel": "Tel",
+    "email": "Email",
+    "address": "Address: Uzbekistan, Tashkent city, Chilanzar district, Obod massif, Istiqlol street, 23A.",
+    "offer": "Public offer",
+    "privacy": "Privacy policy"
+  },
+  "integration": {
+    "title": "Work with us",
+    "partner_title": "Become a Fasgo partner",
+    "partner_text": "Join our platform and reach thousands of customers.",
+    "partner_button": "Become a partner",
+    "courier_title": "Become a Fasgo courier",
+    "courier_text": "Earn money by delivering orders.",
+    "courier_button": "Become a courier"
+  },
+  "questions": {
+    "title": "Frequently asked questions",
+    "q1_title": "How do I order through the Fasgo app?",
+    "q1_text": "Download the app, register, select a dish from the menu and click the \"Order\" button. We'll take care of the rest!",
+    "q2_title": "How long does delivery take?",
+    "q2_text": "Depending on the location and the busyness of the restaurant, delivery takes an average of 30-45 minutes.",
+    "q3_title": "How can I pay?",
+    "q3_text": "You can pay with any bank card or in cash through the courier.",
+    "q4_title": "What if the food doesn't arrive or there's a problem?",
+    "q4_text": "Contact customer support – we will quickly solve the problem or refund your money.",
+    "q5_title": "What kind of food is available?",
+    "q5_text": "Fasgo has thousands of dishes from national, fast food, vegetarian, Asian, European cuisines – a new choice every day!"
+  },
+  "social_media": {
+    "title": "Fasgo on social media",
+    "telegram": "Telegram",
+    "instagram": "Instagram",
+    "facebook": "Facebook"
+  }
+} 
