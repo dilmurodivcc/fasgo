@@ -1,11 +1,16 @@
 import { useState, useRef, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import logo from "../../assets/icon/logo-blue.svg";
 import lang from "../../assets/icon/language.svg";
+import ru from "../../assets/icon/ru.webp";
+import en from "../../assets/icon/en.webp";
 import arrow from "../../assets/icon/arrow-down.svg";
 import { Link } from "react-router-dom";
 const Header = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
+  const { i18n } = useTranslation();
+  const currentLang = i18n.language;
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
@@ -25,6 +30,11 @@ const Header = () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [dropdownOpen]);
+
+  const handleLangChange = (lang: string) => {
+    i18n.changeLanguage(lang);
+    setDropdownOpen(false);
+  };
 
   return (
     <>
@@ -62,14 +72,29 @@ const Header = () => {
                 </button>
                 {dropdownOpen && (
                   <div className="lang-dropdown lang-dropdown-horizontal">
-                    <button className="lang-option">
+                    <button
+                      className={`lang-option${
+                        currentLang === "uz" ? " active" : ""
+                      }`}
+                      onClick={() => handleLangChange("uz")}
+                    >
                       <img src={lang} alt="uz flag" className="flag" />
                     </button>
-                    <button className="lang-option">
-                      <img src={lang} alt="ru flag" className="flag" />
+                    <button
+                      className={`lang-option${
+                        currentLang === "ru" ? " active" : ""
+                      }`}
+                      onClick={() => handleLangChange("ru")}
+                    >
+                      <img src={ru} alt="ru flag" className="flag" />
                     </button>
-                    <button className="lang-option">
-                      <img src={lang} alt="en flag" className="flag" />
+                    <button
+                      className={`lang-option${
+                        currentLang === "en" ? " active" : ""
+                      }`}
+                      onClick={() => handleLangChange("en")}
+                    >
+                      <img src={en} alt="en flag" className="flag" />
                     </button>
                   </div>
                 )}

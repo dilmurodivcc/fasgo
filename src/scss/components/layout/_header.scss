@@ -77,8 +77,13 @@
   z-index: 21;
   transition: border-radius 0.2s;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+ 
 }
-
+ .flag{
+    width: 24px !important;
+    height: 24px !important;
+    border-radius: 50%;
+  }
 .lang-dropdown {
   position: absolute;
   top: 110%;

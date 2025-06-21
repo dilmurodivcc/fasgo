@@ -1,0 +1,53 @@
+{
+  "home": {
+    "welcome": "Welcome to Fasgo"
+  },
+  "footer": {
+    "tel": "Phone",
+    "email": "Email",
+    "address": "Address: Uzbekistan, Tashkent city, Chilanzar district, Obod neighborhood, Istiklol street, 23A.",
+    "offer": "Public Offer",
+    "privacy": "Privacy Policy"
+  },
+  "integration": {
+    "title": "Work with us",
+    "partner_title": "Become a Fasgo Partner",
+    "partner_text": "Join our platform and reach thousands of customers.",
+    "partner_button": "Become a Partner",
+    "courier_title": "Become a Fasgo Courier",
+    "courier_text": "Earn money by delivering orders.",
+    "courier_button": "Become a Courier"
+  },
+  "questions": {
+    "title": "Frequently Asked Questions",
+    "q1_title": "How to order through the Fasgo app?",
+    "q1_text": "Download the app, register, choose a dish from the menu and click the \"Order\" button. We’ll take care of the rest!",
+    "q2_title": "How long does delivery take?",
+    "q2_text": "Depending on your location and the restaurant’s load, delivery usually takes 30–45 minutes.",
+    "q3_title": "How can I pay?",
+    "q3_text": "You can pay with any bank card or in cash to the courier.",
+    "q4_title": "What if the food doesn't arrive or there's a problem?",
+    "q4_text": "Contact customer support – we’ll quickly solve the issue or refund your money.",
+    "q5_title": "What dishes are available?",
+    "q5_text": "Fasgo offers thousands of dishes: national, fast food, vegetarian, Asian, European cuisines – new choices every day!"
+  },
+  "social_media": {
+    "title": "Fasgo on Social Media",
+    "telegram": "Telegram",
+    "instagram": "Instagram",
+    "facebook": "Facebook"
+  },
+  "download": {
+    "title": "Download the app and <br /> start enjoying",
+    "text": "Fasgo is a fast, reliable, and convenient food delivery service. Easily order your favorite dishes through our mobile app, and we’ll deliver them quickly to your door. Great taste – just one click away!",
+    "button_text": "Download App"
+  },
+  "hero": {
+    "title": "Delivery from your favorite restaurants <1>fast</1>",
+    "subtitle": "National dishes, fast food, desserts, and drinks – all in one app!"
+  },
+  "wide_choice": {
+    "title": "Wide Selection",
+    "text": "At <0>Fasgo</0>, there are thousands of dishes for every taste! From national plov to Italian pizza, Japanese sushi, or American burgers – all in <1>one place</1>. Lagman today, sushi tomorrow? The choice is yours! A new taste every day, every order – a delicious adventure!"
+  }
+}
