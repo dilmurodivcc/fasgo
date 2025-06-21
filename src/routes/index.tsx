@@ -1,8 +1,12 @@
+import { Routes, Route } from "react-router-dom";
+import Home from "../pages/Home";
 
-const index = () => {
+const AppRoutes = () => {
   return (
-    <div>index</div>
-  )
-}
+    <Routes>
+      <Route path="/" element={<Home />} />
+    </Routes>
+  );
+};
 
-export default index
+export default AppRoutes;
