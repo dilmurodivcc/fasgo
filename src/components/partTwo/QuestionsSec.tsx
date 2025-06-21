@@ -1,7 +1,7 @@
 const QuestionsSec = () => {
   return (
     <section className="QuestionsSec container">
-      <h1 className="QuestionsSec__title">Ko’p so’raladigan savollar</h1>
+      <h1 className="QuestionsSec__title HeroTitle">Ko’p so’raladigan savollar</h1>
       <div className="QuestionsBox">
         <div className="QuestionsBox_question">
           <div className="QuestionsBox_question_imgBox">
