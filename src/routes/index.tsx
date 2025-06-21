@@ -3,7 +3,7 @@ import Home from "../pages/Home";
 
 const AppRoutes = () => {
   return (
-    <Routes>
+    <Routes> 
       <Route path="/" element={<Home />} />
     </Routes>
   );
