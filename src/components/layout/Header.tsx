@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import  { useState, useRef, useEffect } from "react";
 import logo from "../../assets/icon/logo-blue.svg";
 import lang from "../../assets/icon/language.svg";
 import arrow from "../../assets/icon/arrow-down.svg";
