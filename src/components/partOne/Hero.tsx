@@ -1,5 +1,6 @@
 import iembroidery from "../../assets/icon/embroidery.png";
 import phones from "../../assets/image/heroImg.png";
+import phonesMOb from "../../assets/image/heroMobile.png";
 const Hero = () => {
   return (
     <>
@@ -73,6 +74,7 @@ const Hero = () => {
           </button>
         </div>
         <img src={phones} alt="" />
+        <img src={phonesMOb} className="imgMob" alt="" />
 
         <img src={iembroidery} className="embroidery1" alt="" />
         <img src={iembroidery} className="embroidery2" alt="" />

@@ -7,7 +7,9 @@
   justify-content: space-between;
 
   position: relative;
-
+  .imgMob{
+    display: none;
+  }
   .content {
     align-self: center;
     margin-left: 90px;
