@@ -17,7 +17,7 @@ const Header = () => {
               <img src={lang} alt="" className="flag" />
               <img src={arrow} alt="" />
             </button>
-            <button className="download">Yuklab lish</button>
+            <button className="pm-button blue">Yuklab lish</button>
           </div>
         </div>
       </header>

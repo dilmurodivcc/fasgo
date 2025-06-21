@@ -1,10 +1,14 @@
-
+import Hero from "./Hero";
 
 const page = () => {
   return (
     <>
-    </>
-  )
-}
+    <div className="container">
 
-export default page
+      <Hero />
+    </div>
+    </>
+  );
+};
+
+export default page;
