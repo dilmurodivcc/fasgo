@@ -3,11 +3,14 @@ import QuestionStar2 from "/public/icons/QuestionStar2.svg";
 import QuestionStar3 from "/public/icons/QuestionStar3.svg";
 import QuestionStar4 from "/public/icons/QuestionStar4.svg";
 import QuestionStar5 from "/public/icons/QuestionStar5.svg";
+import { useTranslation } from "react-i18next";
 
 const QuestionsSec = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="QuestionsSec container">
-      <h1 className="QuestionsSec__title HeroTitle">Ko’p so’raladigan savollar</h1>
+      <h1 className="QuestionsSec__title HeroTitle">{t("questions.title")}</h1>
       <div className="QuestionsBox">
         <div className="QuestionsBox_question">
           <div className="QuestionsBox_question_imgBox">
@@ -15,11 +18,8 @@ const QuestionsSec = () => {
           </div>
 
           <div className="QuestionsBox_questions_text">
-            <h3>Fasgo ilovasi orqali qanday buyurtma beraman?</h3>
-            <p>
-              Ilovani yuklab olib, ro‘yxatdan o‘tasiz, menyudan taom tanlaysiz
-              va “Buyurtma berish” tugmasini bosasiz. Qolganini biz hal qilamiz!
-            </p>
+            <h3>{t("questions.q1_title")}</h3>
+            <p>{t("questions.q1_text")}</p>
           </div>
         </div>
         <div className="QuestionsBox_question">
@@ -28,11 +28,8 @@ const QuestionsSec = () => {
           </div>
 
           <div className="QuestionsBox_questions_text">
-            <h3>Yetkazib berish qancha vaqt oladi?</h3>
-            <p>
-              Buyurtma joylashgan joyga va restoran bandligiga qarab, o‘rtacha
-              30-45 daqiqa ichida yetkaziladi.
-            </p>
+            <h3>{t("questions.q2_title")}</h3>
+            <p>{t("questions.q2_text")}</p>
           </div>
         </div>
         <div className="QuestionsBox_question">
@@ -41,11 +38,8 @@ const QuestionsSec = () => {
           </div>
 
           <div className="QuestionsBox_questions_text">
-            <h3>To‘lovni qanday amalga oshiraman?</h3>
-            <p>
-              Siz to‘lovni istalgan bank karta bilan yoki naqd pulda, yetkazib
-              beruvchi orqali amalga oshirishingiz mumkin.
-            </p>
+            <h3>{t("questions.q3_title")}</h3>
+            <p>{t("questions.q3_text")}</p>
           </div>
         </div>
         <div className="QuestionsBox_question">
@@ -54,11 +48,8 @@ const QuestionsSec = () => {
           </div>
 
           <div className="QuestionsBox_questions_text">
-            <h3>Taom yetib kelmasa yoki muammo bo‘lsa nima qilaman?</h3>
-            <p>
-              Mijozlar xizmatiga murojaat qiling – biz muammoni tezda hal
-              qilamiz yoki pulingizni qaytaramiz.
-            </p>
+            <h3>{t("questions.q4_title")}</h3>
+            <p>{t("questions.q4_text")}</p>
           </div>
         </div>
         <div className="QuestionsBox_question">
@@ -67,11 +58,8 @@ const QuestionsSec = () => {
           </div>
 
           <div className="QuestionsBox_questions_text">
-            <h3>Qanday taomlar mavjud?</h3>
-            <p>
-              Fasgo’da milliy, fastfud, vegetarian, osiyo, yevropa
-              oshxonalaridan minglab taomlar bor – har kun yangi tanlov!
-            </p>
+            <h3>{t("questions.q5_title")}</h3>
+            <p>{t("questions.q5_text")}</p>
           </div>
         </div>
       </div>

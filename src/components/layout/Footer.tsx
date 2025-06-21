@@ -1,4 +1,10 @@
+import logo from "/public/icons/logo.svg";
+import footerelips from "/public/icons/footerelips.svg";
+import { useTranslation } from "react-i18next";
+
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <div className="space"></div>
@@ -6,25 +12,24 @@ const Footer = () => {
       <footer className="footer container">
         <div className="footerEklips elips1"></div>
         <div className="footer_links">
-          <img src="/public/icons/logo.svg" alt="" />
-          <a href="tel:+997123456789">Tel: +997 123 456 789</a>
-          <a href="mailto:info@fasgo.app">Email: info@fasgo.app</a>
+          <img src={logo} alt="" />
+          <a href="tel:+997123456789">{t("footer.tel")}: +997 123 456 789</a>
+          <a href="mailto:info@fasgo.app">{t("footer.email")}: info@fasgo.app</a>
           <a href="location" className="footer_location">
-            Manzil: O’zbekiston, Toshkent shahar, Chilonzor tumani Obod mavzesi,
-            Istiqlol ko’chasi, 23A uy.
+            {t("footer.address")}
           </a>
           <div>
-            <a href="">Ommaviy oferta</a>
-            <a href="">Maxfiylik siyosati</a>
+            <a href="">{t("footer.offer")}</a>
+            <a href="">{t("footer.privacy")}</a>
           </div>
         </div>
         <img
-          src="/public/icons/footerelips.svg"
+          src={footerelips}
           alt=""
           className="footerEklips elips1"
         />
         <img
-          src="/public/icons/footerelips.svg"
+          src={footerelips}
           alt=""
           className="footerEklips elips2"
         />
