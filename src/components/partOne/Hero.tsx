@@ -7,7 +7,9 @@ const Hero = () => {
         <div className="content">
           <h1>Sevimli restoranlardan taomlarni  tez yetkazib berish</h1>
           <p>Milliy taomlar, fast-food, desert va ichimliklar bir ilovada!</p>
-          <button>Ilovani yuklab olish</button>
+          <button className="pm-button white">
+            <span>Ilovani yuklab olish</span>
+          </button>
         </div>
         <img src={phones} alt="" />
 

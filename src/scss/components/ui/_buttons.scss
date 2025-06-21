@@ -1,18 +1,22 @@
-.pm-button.blue {
+.pm-button {
   border-radius: 40px 20px;
-  background: #0cc0df;
   padding: 11.5px 25.5px;
   font-family: var(--font-family);
   font-style: italic;
   font-weight: 600;
   font-size: 14px;
-  color: #fff;
   border: none;
-}
-.pm-button.white {
-  background: #fff;
-  background: linear-gradient(332deg, #00acca 0%, #00f97d 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  &.white {
+    background-color: #fff;
+    span {
+      background: linear-gradient(332deg, #00acca 0%, #00f97d 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  &.blue {
+    background: #0cc0df;
+    color: #fff;
+  }
 }
