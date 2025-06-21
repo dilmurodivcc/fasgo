@@ -2,7 +2,8 @@
 
 const page = () => {
   return (
-    <div>partOne</div>
+    <>
+    </>
   )
 }
 
