@@ -1,0 +1,47 @@
+.header {
+  width: 100%;
+  padding: 30px;
+  .container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    a {
+      font-family: var(--font-family);
+      font-style: italic;
+      font-weight: 600;
+      font-size: 16px;
+      color: #0cc0df;
+    }
+  }
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    .lang {
+      border-radius: 36px 18px;
+      padding: 8px 11px;
+      border: none;
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .download {
+      border-radius: 40px 20px;
+      background: #0cc0df;
+      padding: 11.5px 25.5px;
+      font-family: var(--font-family);
+      font-style: italic;
+      font-weight: 600;
+      font-size: 14px;
+      color: #fff;
+      border: none;
+    }
+  }
+}
