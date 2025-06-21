@@ -22,6 +22,12 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+  .mob {
+    display: none;
+  }
+  .des {
+    display: block;
+  }
   p {
     font-weight: 500;
     font-size: 22px;
@@ -29,9 +35,9 @@
     letter-spacing: -0.01em;
     color: #a471d8;
     font-family: var(--font-family);
-    width: 692px;
+    max-width: 692px;
   }
-  .actions{
+  .actions {
     display: flex;
     align-items: center;
     gap: 30px;

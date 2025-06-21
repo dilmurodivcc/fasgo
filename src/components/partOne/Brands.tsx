@@ -9,13 +9,13 @@ const Brands = () => {
   return (
     <>
       <section className="brands">
-        <img src={komolon} alt="" />
-        <img src={dodo} alt="" />
-        <img src={maxway} alt="" />
-        <img src={evos} alt="" />
-        <img src={feedup} alt="" />
-        <img src={oqtepa} alt="" />
-        <img src={sariqbola} alt="" />
+        <img src={komolon} alt="" className="brandImg" />
+        <img src={dodo} alt="" className="brandImg"/>
+        <img src={maxway} alt="" className="brandImg"/>
+        <img src={evos} alt="" className="brandImg"/>
+        <img src={feedup} alt="" className="brandImg"/>
+        <img src={oqtepa} alt="" className="brandImg"/>
+        <img src={sariqbola} alt="" className="brandImg"/>
       </section>
     </>
   );
