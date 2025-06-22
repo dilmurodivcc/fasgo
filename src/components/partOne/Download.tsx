@@ -154,6 +154,8 @@ const Download = () => {
         src={Img}
         alt="desktop"
         className="des"
+        min-width="600px"
+
         variants={imageFade}
         initial="hidden"
         whileInView="show"
