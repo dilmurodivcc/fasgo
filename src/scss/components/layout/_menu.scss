@@ -1,16 +1,26 @@
 .menu-Page {
+  position: fixed;
+  top: 0;
+  right: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: #e9f4f9;
   padding: 40px;
-  .menu-header{
+  z-index: 1000;
+  transform-origin: top right;
+  animation: slideOutFromButton 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+  .menu-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100% !important;
-    img, svg{
-        cursor: pointer;
-
+    img,
+    svg {
+      cursor: pointer;
+    }
+    svg{
+      margin-right: -18px;
     }
   }
   .nav {
@@ -28,8 +38,43 @@
     font-size: 22px !important;
     color: #0cc0df;
   }
-  button{
+  button {
     border: none;
     background-color: transparent;
   }
+}
+
+@keyframes slideOutFromButton {
+  0% {
+    transform: scale(0) translate(100%, -100%);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(0.5) translate(50%, -50%);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1) translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideIntoButton {
+  0% {
+    transform: scale(1) translate(0, 0);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.5) translate(50%, -50%);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(0) translate(100%, -100%);
+    opacity: 0;
+  }
+}
+
+.menu-Page.closing {
+  animation: slideIntoButton 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19)
+    forwards;
 }

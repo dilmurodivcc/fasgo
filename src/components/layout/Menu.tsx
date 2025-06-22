@@ -1,16 +1,39 @@
-import { Link, useNavigate } from "react-router-dom";
+import { useState, useEffect } from "react";
 import logo from "../../assets/icon/logo-blue.svg";
 
-const Menu = () => {
-  const navigate = useNavigate();
+interface MenuProps {
+  isOpen: boolean;
+  onClose: () => void;
+}
+
+const Menu = ({ isOpen, onClose }: MenuProps) => {
+  const [isClosing, setIsClosing] = useState(false);
+
+  useEffect(() => {
+    if (!isOpen) {
+      setIsClosing(true);
+      const timer = setTimeout(() => {
+        setIsClosing(false);
+      }, 300);
+      return () => clearTimeout(timer);
+    }
+  }, [isOpen]);
+
+  const handleClose = () => {
+    setIsClosing(true);
+    setTimeout(() => {
+      onClose();
+    }, 300);
+  };
+
+  if (!isOpen && !isClosing) return null;
+
   return (
     <>
-      <section className="menu-Page">
+      <section className={`menu-Page ${isClosing ? "closing" : ""}`}>
         <header className="menu-header">
-          <Link to="/">
-            <img src={logo} alt="" className="logo" />
-          </Link>
-          <button onClick={() => navigate(-1)}>
+          <img src={logo} alt="" className="logo" />
+          <button onClick={handleClose}>
             {" "}
             <svg
               width="57"
@@ -38,7 +61,7 @@ const Menu = () => {
         </header>
         <nav className="nav">
           <a href="">Biz haqimizda</a>
-          <a href="">Ko’p so’raladigan savollar</a>
+          <a href="">Ko'p so'raladigan savollar</a>
           <a href="">Biz bilan ishlash</a>
         </nav>
       </section>
