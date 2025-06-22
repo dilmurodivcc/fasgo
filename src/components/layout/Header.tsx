@@ -1,17 +1,17 @@
-import { useState, useRef, useEffect } from "react";
-import { useTranslation } from "react-i18next";
-import logo from "../../assets/icon/logo-blue.svg";
-import lang from "../../assets/icon/language.svg";
-import ru from "../../assets/icon/ru.webp";
-import en from "../../assets/icon/en.webp";
-import arrow from "../../assets/icon/arrow-down.svg";
-import Menu from "./Menu";
+import { useState, useRef, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
+import logo from '../../assets/icon/logo-blue.svg';
+import lang from '../../assets/icon/language.svg';
+import ru from '../../assets/icon/ru.webp';
+import kg from '../../assets/icon/kg.png';
+import arrow from '../../assets/icon/arrow-down.svg';
+import Menu from './Menu';
 
 const Header = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
   const currentLang = i18n.language;
 
   useEffect(() => {
@@ -24,12 +24,12 @@ const Header = () => {
       }
     }
     if (dropdownOpen) {
-      document.addEventListener("mousedown", handleClickOutside);
+      document.addEventListener('mousedown', handleClickOutside);
     } else {
-      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener('mousedown', handleClickOutside);
     }
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener('mousedown', handleClickOutside);
     };
   }, [dropdownOpen]);
 
@@ -47,14 +47,14 @@ const Header = () => {
       <header className="header">
         <div className="container">
           <img src={logo} alt="" className="logo" />
-          <nav className="nav">
-            <a href="">Biz haqimizda</a>
-            <a href="">Ko'p so'raladigan savollar</a>
-            <a href="">Biz bilan ishlash</a>
-          </nav>
+          {/* <nav className="nav">
+            <a href="">{t('header.about')}</a>
+            <a href="">{t('header.questions')}</a>
+            <a href="">{t('header.work')}</a>
+          </nav> */}
           <div className="actions">
             <div
-              className={`lang-dropdown-wrapper${dropdownOpen ? " open" : ""}`}
+              className={`lang-dropdown-wrapper${dropdownOpen ? ' open' : ''}`}
               ref={dropdownRef}
             >
               <div className="lang-dropdown-row">
@@ -63,16 +63,28 @@ const Header = () => {
                   onClick={() => setDropdownOpen((prev) => !prev)}
                   aria-label="Tilni tanlash"
                 >
-                  <img src={lang} alt="flag" className="flag" />
+                  <img
+                    src={
+                      currentLang === 'uz'
+                        ? lang
+                        : currentLang === 'ru'
+                        ? ru
+                        : currentLang === 'kg'
+                        ? kg
+                        : lang
+                    }
+                    alt="flag"
+                    className="flag"
+                  />
                   <img
                     src={arrow}
                     alt="arrow"
-                    className={`arrow${dropdownOpen ? " open" : ""}`}
+                    className={`arrow${dropdownOpen ? ' open' : ''}`}
                     style={{
                       transform: dropdownOpen
-                        ? "rotate(180deg)"
-                        : "rotate(0deg)",
-                      transition: "transform 0.2s",
+                        ? 'rotate(180deg)'
+                        : 'rotate(0deg)',
+                      transition: 'transform 0.2s',
                     }}
                   />
                 </button>
@@ -80,33 +92,33 @@ const Header = () => {
                   <div className="lang-dropdown lang-dropdown-horizontal">
                     <button
                       className={`lang-option${
-                        currentLang === "uz" ? " active" : ""
+                        currentLang === 'uz' ? ' active' : ''
                       }`}
-                      onClick={() => handleLangChange("uz")}
+                      onClick={() => handleLangChange('uz')}
                     >
                       <img src={lang} alt="uz flag" className="flag" />
                     </button>
                     <button
                       className={`lang-option${
-                        currentLang === "ru" ? " active" : ""
+                        currentLang === 'ru' ? ' active' : ''
                       }`}
-                      onClick={() => handleLangChange("ru")}
+                      onClick={() => handleLangChange('ru')}
                     >
                       <img src={ru} alt="ru flag" className="flag" />
                     </button>
                     <button
                       className={`lang-option${
-                        currentLang === "en" ? " active" : ""
+                        currentLang === 'kg' ? ' active' : ''
                       }`}
-                      onClick={() => handleLangChange("en")}
+                      onClick={() => handleLangChange('kg')}
                     >
-                      <img src={en} alt="en flag" className="flag" />
+                      <img src={kg} alt="kg flag" className="flag" />
                     </button>
                   </div>
                 )}
               </div>
             </div>
-            <button className="pm-button blue">Yuklab lish</button>
+            <button className="pm-button blue">{t('header.download')}</button>
             <button className="menu" onClick={handleMenuToggle}>
               <svg
                 width="32"

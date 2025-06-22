@@ -1,30 +1,32 @@
-import tg from "/public/icons/tg.svg";
-import insta from "/public/icons/insta.svg";
-import facebooks from "/public/icons/facebooks.svg";
-import { motion, easeOut } from "framer-motion";
+import tg from '/public/icons/tg.svg';
+import insta from '/public/icons/insta.svg';
+import facebooks from '/public/icons/facebooks.svg';
+import { motion, easeOut } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 const socials = [
   {
     icon: tg,
-    title: "Telegram",
-    desc: "fasgo.app",
+    title: 'Telegram',
+    desc: 'fasgo.app',
   },
   {
     icon: insta,
-    title: "Instagram",
-    desc: "fasgo_official",
+    title: 'Instagram',
+    desc: 'fasgo_official',
   },
   {
     icon: facebooks,
-    title: "Facebook",
-    desc: "fasgo.app",
+    title: 'Facebook',
+    desc: 'fasgo.app',
   },
 ];
 
 const SocialMedia = () => {
+  const { t } = useTranslation();
   return (
     <section className="SocialMediaSec container">
-      <h1 className="HeroTitle">Fasgo ijtimoiy tarmoqlarda</h1>
+      <h1 className="HeroTitle">{t('social_media.title')}</h1>
       <div className="SocialMediBox">
         {socials.map((s, i) => (
           <motion.div

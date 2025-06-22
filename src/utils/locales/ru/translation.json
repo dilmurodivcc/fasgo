@@ -2,6 +2,13 @@
   "home": {
     "welcome": "Welcome to Fasgo"
   },
+  "header": {
+    "menu": "Меню",
+    "about": "О нас",
+    "questions": "Часто задаваемые вопросы",
+    "work": "Работайте с нами",
+    "download": "Скачать приложение"
+  },
   "footer": {
     "tel": "Телефон",
     "email": "Электронная почта",

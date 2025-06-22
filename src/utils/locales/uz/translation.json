@@ -2,6 +2,13 @@
   "home": {
     "welcome": "Fasgo xush kelibsiz"
   },
+  "header": {
+    "menu": "Menyu",
+    "about": "Biz haqimizda",
+    "questions": "Ko'p so'raladigan savollar",
+    "work": "Biz bilan ishlash",
+    "download": "Ilovani yuklab olish"
+  },
   "footer": {
     "tel": "Tel",
     "email": "Email",
@@ -51,4 +58,3 @@
     "text": "<0>Fasgo</0>’da ta’bingizga mos ming xil taom bor! Milliy palovdan tortib, italyan pizzasi, yapon sushisi yoki amerika burgerigacha — hammasi <1>bir joyda</1>. Bugun lag'mon, ertaga sushi? Tanlov sizdan! Har kun yangi ta’m, har buyurtma – mazali sarguzasht!"
   }
 }
-  
