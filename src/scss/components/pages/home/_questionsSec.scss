@@ -67,6 +67,9 @@
         font-size: 22px;
         line-height: 109%;
         color: #19082a;
+        @media (max-width:760px) {
+          text-align: center;
+        }
         @media (max-width: 650px) {
           font-size: 14px;
         }
