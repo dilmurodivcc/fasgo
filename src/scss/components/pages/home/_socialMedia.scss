@@ -5,7 +5,6 @@
       font-size: 24px;
     }
   }
-
 }
 
 .SocialMediBox {
@@ -14,6 +13,7 @@
   justify-content: center;
   gap: 30px;
   margin-top: 30px;
+  flex-wrap: wrap;
   @media (max-width: 760px) {
     width: 100%;
     gap: 10px;
@@ -27,11 +27,19 @@
       display: flex;
       align-items: center;
       padding: 20px;
+      background-color: white;
+      border-radius: 40px 20px;
+      width: 313px;
+      height: 100px;
       img {
         @media (max-width: 700px) {
           width: 60px;
           height: 60px;
         }
+      }
+      @media (max-width: 560px) {
+        width: auto;
+        height: auto;
       }
       div {
         h4 {
