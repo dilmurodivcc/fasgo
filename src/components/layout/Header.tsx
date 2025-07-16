@@ -118,7 +118,17 @@ const Header = () => {
                 )}
               </div>
             </div>
-            <button className="pm-button blue">{t('header.download')}</button>
+            <button
+              className="pm-button blue"
+              onClick={() => {
+                window.open(
+                  'https://form.jotform.com/251961567252462',
+                  '_blank'
+                );
+              }}
+            >
+              {t('header.work')}
+            </button>
             <button className="menu" onClick={handleMenuToggle}>
               <svg
                 width="32"

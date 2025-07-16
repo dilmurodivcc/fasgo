@@ -1,5 +1,6 @@
-import { useState, useEffect } from "react";
-import logo from "../../assets/icon/logo-blue.svg";
+import { useState, useEffect } from 'react';
+import logo from '../../assets/icon/logo-blue.svg';
+import { useTranslation } from 'react-i18next';
 
 interface MenuProps {
   isOpen: boolean;
@@ -7,8 +8,8 @@ interface MenuProps {
 }
 
 const Menu = ({ isOpen, onClose }: MenuProps) => {
+  const { t } = useTranslation();
   const [isClosing, setIsClosing] = useState(false);
-
   useEffect(() => {
     if (!isOpen) {
       setIsClosing(true);
@@ -30,11 +31,10 @@ const Menu = ({ isOpen, onClose }: MenuProps) => {
 
   return (
     <>
-      <section className={`menu-Page ${isClosing ? "closing" : ""}`}>
+      <section className={`menu-Page ${isClosing ? 'closing' : ''}`}>
         <header className="menu-header">
           <img src={logo} alt="" className="logo" />
           <button onClick={handleClose}>
-            {" "}
             <svg
               width="57"
               height="57"
@@ -60,9 +60,19 @@ const Menu = ({ isOpen, onClose }: MenuProps) => {
           </button>
         </header>
         <nav className="nav">
-          <a href="">Biz haqimizda</a>
-          <a href="">Ko'p so'raladigan savollar</a>
-          <a href="">Biz bilan ishlash</a>
+          <a className="pointer" onClick={handleClose}>
+            {t('header.about')}
+          </a>
+          <a
+            href="https://form.jotform.com/251961567252462"
+            target="_blank"
+            onClick={handleClose}
+          >
+            {t('header.work')}
+          </a>
+          <a href="#faq" onClick={handleClose}>
+            {t('header.faq')}
+          </a>
         </nav>
       </section>
     </>
